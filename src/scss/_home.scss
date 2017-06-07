@@ -1,0 +1,297 @@
+
+//---------- fonts -------------------------
+
+@font-face {
+	font-family: 'Holtwood';
+	src: url('../fonts/Holtwood_One_Sc/HoltwoodOneSC.ttf');
+}
+
+@font-face {
+	font-family: 'NevisBold';
+	src: url('../fonts/nevis/nevis.ttf');
+}
+
+
+
+
+// #b72525
+
+
+
+//---------- end fonts ----------------------
+
+body {
+	background-color: black;
+}
+
+h1.header-logo {
+	text-align: center;
+	width: 100%;
+	font-size: 50px;
+	}
+
+h1.coffee-logo {
+	font-family: 'Lobster';
+	color: #e5d4cd;
+	padding-bottom: 20px;
+	text-shadow: 2px 2px 0 hsla(0, 33%, 63%, 0.39);
+		
+}
+
+
+.first-section {
+	background-image: url(assets/);
+	
+}
+
+
+
+.store-hours{
+	width: 40%;
+	text-align: center;
+	animation: fadein 2.2s;
+
+	h3 {
+		color: #da320f;
+	}
+
+	p {
+		color: #fdfdfd;
+		text-transform: uppercase;
+		font: 91% NevisBold, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+	}
+
+	.phone {
+	    border-top: 1px solid white;
+	    border-bottom: 1px solid white;
+	    padding: 0px 0;
+	    width: 100%;
+	    font-size: 180%;
+	    color: white;
+
+
+	}
+}
+
+
+
+
+// ---------- end header ---------------------------------------------------
+
+
+
+
+
+
+//---------- welcome section --------------------------------------------------------
+
+
+.about-section {
+	background: #da320f;
+	height: 400px;
+
+	h1 {
+		animation: fadein 5.5s;
+	}
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+.big-n-bold {
+	font-size: 20px;
+	color: white;
+}
+
+
+
+
+
+
+@media (max-width: $screen-xs-max) { 
+
+	.coffee-carousel {
+		display: none;
+	}
+
+	
+}
+
+
+@media (min-width: $screen-sm-max) { 
+
+	.c-t-dotted {
+		display: none;
+	}
+
+	
+}
+
+
+@media (max-width: $screen-sm-max) { 
+		.todays-menu {
+			display: none;
+		}
+
+		.menu-dotted {
+			display: none;
+		}
+
+}
+
+
+
+//---------- video ------------------------
+
+.video-section {
+	text-align: center;
+	width: 100%;
+
+}
+
+.we-can-video {
+	width: 50%;
+	text-align: center;
+}
+
+//---------- End Video ------------------------
+
+//---------- Artist-----------------------------------------
+
+.artist-info{
+	width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    transform: translateZ(0);
+
+    img {
+		max-width: none;
+
+		transition: all 3s ease-out;
+	}
+
+}
+
+.artist-info:hover img {
+		transform: scale(1.5);
+}
+
+
+
+
+
+.artist-info:hover .artist-hover {
+	opacity: 0.7;
+}
+
+
+
+.artist-hover{
+	transition: all 0.5s ease-out;
+	background-color: #000;
+	opacity: 0;
+	width: 300px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+.artist-first {
+	color: #FFF;
+	padding-top: 100px;
+	font-size: 25px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.artist-hover:hover h2 {
+	animation: fadeInDown 1s;
+}
+
+.artist-last {
+	font-size: 15px;
+	color: #da320f;
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.artist-hover:hover p {
+	animation: fadeInUp 1.5s;
+}
+
+
+
+
+
+//---------- End Artist-----------------------------------------
+
+
+
+
+//--------- footer -------------------------
+
+
+
+footer {
+	background: black;
+	
+}
+
+
+
+
+
+	
+
+//---------- end footer ------------------------
+
+
+
+
+
+
+
+//----------- tablet ----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
