@@ -11,8 +11,27 @@
 	src: url('../fonts/nevis/nevis.ttf');
 }
 
+@font-face {
+	font-family: 'Beyond';
+	src: url('../fonts/beyond-wonderland/Beyond-Wonderland.ttf');
+}
+
+@font-face {
+	font-family: 'LittleLord';
+	src: url('../fonts/littlelordfontleroy/LittleLordFontleroyNF.ttf');
+}
 
 
+@font-face {
+	font-family: 'Precious';
+	src: url('../fonts/precious/Precious.ttf');
+}
+
+
+@font-face {
+	font-family: 'tattoo-sailor';
+	src: url('../fonts/tatoo-sailor/Tatoo-Sailor.TTF');
+}
 
 // #b72525
 
@@ -24,35 +43,27 @@ body {
 	background-color: black;
 }
 
-h1.header-logo {
-	text-align: center;
-	width: 100%;
-	font-size: 50px;
-	}
-
-h1.coffee-logo {
-	font-family: 'Lobster';
-	color: #e5d4cd;
-	padding-bottom: 20px;
-	text-shadow: 2px 2px 0 hsla(0, 33%, 63%, 0.39);
-		
-}
-
 
 .first-section {
-	background-image: url(assets/);
+	background-image: url('../img/liberty-logo.jpg');
+	background-repeat: no-repeat;
+	background-size: 46%;
+	background-position: -3px 0; 
+	height: 500px;
 	
 }
 
 
 
 .store-hours{
-	width: 40%;
+	width: 67%;
 	text-align: center;
 	animation: fadein 2.2s;
 
 	h3 {
-		color: #da320f;
+		color: #e6c074;
+		font-family: LittleLord;
+		font-size: 70px;
 	}
 
 	p {
@@ -64,8 +75,9 @@ h1.coffee-logo {
 	.phone {
 	    border-top: 1px solid white;
 	    border-bottom: 1px solid white;
-	    padding: 0px 0;
-	    width: 100%;
+	    padding: 6px;
+	    text-align: center;
+	    width: 34%;
 	    font-size: 180%;
 	    color: white;
 
@@ -91,7 +103,9 @@ h1.coffee-logo {
 	height: 400px;
 
 	h1 {
+		font-size: 65px;
 		animation: fadein 5.5s;
+		font-family: LittleLord;
 	}
 }
 
@@ -263,7 +277,7 @@ h1.coffee-logo {
 
 
 footer {
-	background: black;
+	background: red;
 	
 }
 
