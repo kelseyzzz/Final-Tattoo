@@ -1,10 +1,6 @@
 
 //---------- fonts -------------------------
 
-@font-face {
-	font-family: 'Holtwood';
-	src: url('../fonts/Holtwood_One_Sc/HoltwoodOneSC.ttf');
-}
 
 @font-face {
 	font-family: 'NevisBold';
@@ -47,18 +43,35 @@ body {
 .first-section {
 	background-image: url('../img/liberty-logo.jpg');
 	background-repeat: no-repeat;
-	background-size: 46%;
+	background-size: 100%;
 	background-position: -3px 0; 
 	height: 500px;
+	animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-name: fadeInHeader;
 	
+}
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 
 
 .store-hours{
-	width: 67%;
-	text-align: center;
-	animation: fadein 2.2s;
+	
+	animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-name: fadeInHeader;
+
 
 	h3 {
 		color: #e6c074;
@@ -67,7 +80,7 @@ body {
 	}
 
 	p {
-		color: #fdfdfd;
+		color: rgb(165, 165, 165);
 		text-transform: uppercase;
 		font: 91% NevisBold, Helvetica, Arial, Verdana, Tahoma, sans-serif;
 	}
@@ -77,7 +90,6 @@ body {
 	    border-bottom: 1px solid white;
 	    padding: 6px;
 	    text-align: center;
-	    width: 34%;
 	    font-size: 180%;
 	    color: white;
 
@@ -100,7 +112,7 @@ body {
 
 .about-section {
 	background: #da320f;
-	height: 400px;
+	height: 200px;
 
 	h1 {
 		font-size: 65px;
@@ -174,6 +186,15 @@ body {
 //---------- End Video ------------------------
 
 //---------- Artist-----------------------------------------
+
+
+.our-artist {
+	font-family: LittleLord;
+	font-size: 60px;
+}
+
+
+
 
 .artist-info{
 	width: 300px;
