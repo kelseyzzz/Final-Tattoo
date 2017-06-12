@@ -46,35 +46,22 @@ body {
 	background-size: 100%;
 	background-position: -3px 0; 
 	height: 500px;
-	animation-duration: 0.5s;
-    animation-delay: 0.2s;
-    animation-name: fadeInHeader;
+	animation-duration: 0.7s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
 	
 }
-
-@keyframes fadeInHeader {
-  0% {
-    opacity: 0;
-    transform: translate3d(0,100%,0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 
 
 .store-hours{
-	
-	animation-duration: 0.5s;
-    animation-delay: 0.2s;
-    animation-name: fadeInHeader;
+	backface-visibility: hidden;
+	animation-duration: 0.7s;
+    animation-delay: 0.8s;
+    animation-name: fadeInUp;
 
 
 	h3 {
-		color: #e6c074;
+		margin-top: 83px;
 		font-family: LittleLord;
 		font-size: 70px;
 	}
@@ -86,12 +73,13 @@ body {
 	}
 
 	.phone {
+
 	    border-top: 1px solid white;
 	    border-bottom: 1px solid white;
 	    padding: 6px;
 	    text-align: center;
 	    font-size: 180%;
-	    color: white;
+	    color: #e6c074;
 
 
 	}
@@ -110,21 +98,26 @@ body {
 //---------- welcome section --------------------------------------------------------
 
 
+.welcome-section {
+	background: #da320f;
+
+	h1 {
+		font-size: 65px;
+		font-family: LittleLord;
+	}
+}
+
+
 .about-section {
 	background: #da320f;
 	height: 200px;
 
 	h1 {
 		font-size: 65px;
-		animation: fadein 5.5s;
-		font-family: LittleLord;
+		
 	}
 }
 
-@keyframes fadein {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
 
 
 .big-n-bold {
