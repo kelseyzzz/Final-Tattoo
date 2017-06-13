@@ -45,7 +45,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: -3px 0; 
-	height: 500px;
+	height: 620px;
 	animation-duration: 0.7s;
     animation-delay: 0.4s;
     animation-name: fadeInUp;
@@ -54,10 +54,6 @@ body {
 
 
 .store-hours{
-	backface-visibility: hidden;
-	animation-duration: 0.7s;
-    animation-delay: 0.8s;
-    animation-name: fadeInUp;
 
 
 	h3 {
@@ -99,22 +95,72 @@ body {
 
 
 .welcome-section {
-	background: #da320f;
+	margin-top: 200px;
+	margin-left: 200px;
+	height: 290px;
+    text-align: center;
+    background-image: url('../img/history-photo.jpg');
+    background-repeat: no-repeat;
 
-	h1 {
-		font-size: 65px;
-		font-family: LittleLord;
+		img {
+			position: relative;
+			height: 290px;
+			width: 470px;
+		}
+	
+
+	.welcome-hover {
+
+		    padding-top: 10px;
+    		margin-top: 30px;
+    		margin-left: 200px;
+    		height: 368px;
+   			width: 614px;
+    		background: hsla(7,92%,69%,.7);
+
+		h1 {
+			
+			font-size: 65px;
+			font-family: LittleLord;
+
+		 }
+
+		 h2 {
+		 	font-family: LittleLord;
+		 	font-size: 50px;
+		 }
+
+		 h5 {
+		 	font-family: LittleLord;
+		 	font-family: 45px;
+		 }
+
+
 	}
 }
 
 
+
 .about-section {
-	background: #da320f;
+	margin-top: 100px;
+	background: rgba(218, 50, 15, 0.5);
 	height: 200px;
+	position: relative;
+	margin-bottom: 100px;
 
 	h1 {
-		font-size: 65px;
+		font-size: 102px;
+    	position: absolute;
+    	top: -35%;
+    	color: #e6c074;
 		
+	}
+
+	p {
+		position: absolute;
+		font-family: NevisBold;
+		padding-top: 8%;
+		color: #ebdbb9;
 	}
 }
 
@@ -132,8 +178,30 @@ body {
 
 @media (max-width: $screen-xs-max) { 
 
-	.coffee-carousel {
-		display: none;
+	.first-section {
+		height: 350px;
+	}
+
+	.welcome-section {
+			margin-left: 0px;
+
+		.welcome-hover{
+			margin-left: 0px;
+			width: 100%;
+			height: 500px;
+
+		}
+	}
+
+	.we-did-it h3{
+		
+			font-size: 30px;
+	}
+
+	
+
+	.footer {
+		margin-top: 100px;
 	}
 
 	
@@ -142,22 +210,25 @@ body {
 
 @media (min-width: $screen-sm-max) { 
 
-	.c-t-dotted {
-		display: none;
-	}
+	// 	.welcome-section {
+	// 		margin-left: 0px;
+
+	// 	.welcome-hover{
+	// 		margin-left: 0px;
+	// 		width: 100%;
+	// 		height: 400px;
+
+	// 	}
+	// }
 
 	
 }
 
 
 @media (max-width: $screen-sm-max) { 
-		.todays-menu {
-			display: none;
-		}
-
-		.menu-dotted {
-			display: none;
-		}
+		// .first-section {
+		// 	height: 200px;
+		// }
 
 }
 
@@ -168,12 +239,27 @@ body {
 .video-section {
 	text-align: center;
 	width: 100%;
+	height: 400px;
+	padding-top: 400px;
+}
 
+.we-did-it {
+	background: rgba(232, 226, 155, 0.7);
+	height: 100px;
+	width: 650px;
+	font-family: LittleLord;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		h3{
+			font-size: 85px;
+		}
+	
 }
 
 .we-can-video {
-	width: 50%;
-	text-align: center;
+	width: 57%;
+    text-align: center;
+    padding-left: 94px;
 }
 
 //---------- End Video ------------------------
@@ -291,9 +377,20 @@ body {
 
 
 footer {
-	background: red;
+	background-image: url('../img/footer-bg.jpg');
+	opacity: 0.7;
+	height: auto;
+	background-size: 100%;
+	margin-top: 800px;
+	height: 300px;
+	box-shadow: inset 0 0 10px #000000;
+	
+	.footer-middle {
+		padding-top: 50px;
+	}
 	
 }
+
 
 
 
